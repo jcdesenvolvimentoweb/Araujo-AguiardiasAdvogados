@@ -1,0 +1,219 @@
+/* ======== Estilos Globais ======== */
+body {
+    font-family: "Merriweather", serif; /* Define a fonte global */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos padrão */
+
+    
+  }
+
+  /* ======== Menu de Navegação ======== */
+  .nav {
+     /* background-color: black; Cor de fundo preta */
+    display: flex; /* Usa flexbox para organizar os itens */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding-top: 10px;
+  }
+  marquee{
+    /* padding: 20px; */
+    margin: 20px;
+  }
+
+  ul {
+    display: flex; /* Exibe os itens da lista lado a lado */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    list-style: none; /* Remove os marcadores padrão das listas */
+    text-decoration: underline; /* Adiciona sublinhado */
+    text-decoration-thickness: 3px; /* Define a espessura do sublinhado */
+    text-decoration-color:  #201c02d2;; /* Define a cor do sublinhado */
+}
+
+
+
+  ul li a {
+    color: #695a06; /* Define a cor do texto como branca */
+    font-size: 20px; /* Tamanho do texto */
+    padding: 10px 20px; /* Espaçamento interno do texto */
+    margin: 5px; /* Espaçamento externo entre os links */
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color  0.3s ease; /* Adiciona uma animação ao passar o mouse */
+  }
+
+  ul li a:hover {
+    background-color:rgb(209, 204, 204); /* Define uma cor ao passar o mouse */
+    color: #302a0bce;
+    border-radius: 8px;
+  }
+
+  /* ======== Estilos de Textos ======== */
+  h1 {
+    font-family: "Merriweather", serif;
+    text-align: center; /* Centraliza o texto */
+    color: #382e06f6; /* Cor do texto */
+  }
+
+ .chamada {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    color: #13110d;
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #473702;
+  }
+
+  /* ======== Apresentação ======== */
+  .container {
+    background-color: grey; /* Fundo cinza */
+    overflow: hidden; /* Oculta partes excedentes */
+    padding: 20px;
+  }
+  /* serviços */
+  h2{
+
+    color: white;
+    text-align: center;
+  }
+  .servicos-card {
+    display: flex;
+  
+  }
+
+  .conteudo-servicos {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Texto no centro */
+  }
+
+  .conteudo-servicos img {
+    max-width: 100%; /* Torna a imagem responsiva */
+    height: auto; /* Ajusta a altura proporcional à largura */
+    padding: 30px;
+  }
+.servicos-section{
+/* display: flex; */
+/* justify-content: center; */
+background-color: black;
+
+}
+.servicos-content{
+display: flex;
+justify-content: center;
+
+
+}
+.servicos-content {
+display: flex;
+justify-content: space-around;
+margin: 10px;
+
+
+}
+.servicos-texto {
+
+    text-align: center;
+}
+.servicos {    
+
+background-color: black;
+width: 500px;
+height: 400px;
+padding: 10px;
+margin: 30px;
+text-align: center;
+}
+  /* ======== Rodapé ======== */
+  .footer-contatos{
+    /* background-color: black; */
+
+    width: 100%;
+  }
+  .botoes-contatos a{
+    display:block;
+    /* background-color: black; */
+    color: #333;
+    font-size: 20px;
+    border-radius: 12px;
+  
+
+  }
+  a {
+padding: 10px;
+margin: 5px;
+text-decoration: none;
+color: #695a06;
+
+  }
+  .botoes-contatos {
+/* Fundo dourado */ /*     background-color: #695a06;*/
+    color: #fff; /* Texto branco */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+   display: flex; /* Mantém formato de botão */
+   justify-content: center;
+   align-items: center;
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+  }
+  /* localização */
+  .localizacao{
+    display: flex;
+    justify-content: center;
+  }
+
+
+    .localizacao iframe {
+        width: 100%; /* Torna o iframe responsivo */
+        max-width: 600px; /* Limita a largura máxima em 600px */
+        height: 450px; /* Altura padrão */
+        border: 0; /* Remove a borda */
+    }
+/* responsividade localização */
+    @media (max-width: 768px) {
+        .localizacao iframe {
+            height: 300px; /* Ajusta a altura para dispositivos menores */
+        }
+    }
+
+  /* ======== Media Queries (Responsividade) ======== */
+  @media (max-width: 768px) {
+    /* Para dispositivos com largura de até 768px */
+    .nav {
+      flex-direction: column; /* Coloca o menu em coluna */
+    }
+
+    ul li a {
+      font-size: 16px; /* Reduz o tamanho do texto */
+      padding: 5px 10px; /* Ajusta o espaçamento */
+    }
+
+    .conteudo-servicos img {
+      max-width: 90%; /* Ajusta a largura máxima da imagem */
+    }
+
+    h1, h2 {
+      font-size: 18px; /* Reduz o tamanho dos títulos */
+    }
+  }
+
+  @media (max-width: 480px) {
+    /* Para dispositivos menores, como smartphones */
+    ul li a {
+      font-size: 14px; /* Texto menor para links */
+    }
+
+    .botoes-contatos {
+      padding: 8px 16px; /* Botões menores */
+      font-size: 14px;
+    }
+  }
